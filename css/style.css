@@ -1,0 +1,322 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Loading */
+/* .body {
+    margin: 0;
+    background-color: #0a0919;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .body div {
+    width: 0.875rem;
+    height: 5rem;
+    background: #ffc720;
+    margin-left: 0.875rem;
+    animation: bar-loading 1s infinite alternate;
+  }
+  
+  .body div:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  
+  .body div:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  
+  @keyframes bar-loading {
+    0% {
+      transform: scaleY(0.5);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  } */
+  
+/* Loading */
+/*              Navbar                          */
+.navbar
+{
+    background-color: #100f2e;
+}
+
+.icon
+{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.font-size
+{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.font-size li
+{
+    padding-right: 30px;
+}
+
+.nav-link:hover , #socialMedia li a img:hover ,  .navbar img:hover
+{
+    transform: scale(1.4);
+    transition: all .5s ease-in-out;
+    color: #ffc720 !important;
+}
+
+/*              Navbar                          */
+
+/*              Home                          */
+
+.home
+{
+    background-color: #0a0919;
+    overflow: hidden;
+}
+
+#socialMedia li
+{
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.name
+{
+    font-family: "a bug's life - debugged";
+    font-size: 60px;
+}
+
+.home .row 
+{
+    align-items: center;
+}
+
+.home img:hover 
+{
+    transform: rotate(25deg);
+    /* transform: rotate(-25deg); */
+    transition: all 1s ease-in-out;
+}
+
+/*              Home                          */
+
+/*              About me                          */
+
+.about-me
+{
+    width: 100%;
+    background-color: #100f2e;
+    overflow: hidden;
+    background-image: url(/images/Circle.webp);
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.about-me .row
+{
+    align-items: center;  
+}
+
+/* .about-me .row .text-light
+{
+    width: 500px;
+} */
+
+.about-me ul
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.about-me article:nth-of-type(2) ul li
+{
+    margin-bottom: 20px;
+}
+
+.about-me article:nth-of-type(2) ul li i
+{
+    margin-right: 20px;
+}
+
+.about-me article:last-of-type ul 
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.about-me article:last-of-type ul li i
+{
+    margin-right: 5px;
+}
+
+.about-me .row .image
+{
+    box-shadow: -150px -150px 0px -140px #ffc720;
+    padding-top: 15px;
+}
+/*              About me                          */
+/* Qualifications */
+
+.Qualifications
+{
+    background-color: #131433;
+    color: #fff;
+}
+
+.Qualifications .Borderrrrr
+{
+    border-left: 1px solid #ffc720;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.Qualifications .fa-circle-dot
+{
+    margin-left: -7px;
+}
+
+.Qualifications .Borderrrrr:hover
+{
+    transform: scale(1.01);
+    border: 1px solid #ffc720;
+    transition: all .5s ease-in-out;
+    border-radius: 30px;
+}
+
+.what-offer .col-xl-4
+{
+    border: 2px solid #ffc720;
+    border-radius: 0 75px 0 0 ;
+    padding: 25px;
+    margin: 50px;
+    width: 40vh;
+}
+
+
+.what-offer
+{
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.what-offer .col-xl-4:hover
+{
+    background-color: #ffc720;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+/* Qualifications */
+
+/* Portfolio */
+
+.Portfolio
+{
+    background-color: #100f2e;
+    color: #fff;
+    text-align: center;
+    background-image: url(/images/Pattern.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Portfolio ul
+{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Portfolio ul li
+{
+    margin-right: 50px;
+    line-height: 4;
+}
+
+.Portfolio ul li:hover
+{
+    color: #ffc720;
+    transition: all .5s ease-in-out;
+}
+
+.Portfolio .row img
+{
+    width: 75%;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.Portfolio .row img:hover
+{
+    border: 2px solid #ffc720;
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+/* .bigInfo
+{
+    bs-modal-width: 85% !important;
+} */
+/* Portfolio */
+/* Contact Me */
+
+.Contact-Me
+{
+    background-color: #131433;
+    color: #fff;
+    text-align: center;
+}
+
+.Contact-Me .form
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.Contact-Me .form input , .Contact-Me .form textarea
+{
+    margin: 15px 0;
+    background-color: #0a0919;
+    color: #fff;
+}
+
+.Contact-Me ul
+{
+    margin-top: 100px;
+}
+
+.Contact-Me .info li
+{
+    list-style: none;
+    display: flex;
+    flex-flow: row ;
+    justify-content: flex-start;
+    align-items:initial;
+    text-align: left;
+}
+
+.Contact-Me .info li article
+{
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+/* Contact Me */

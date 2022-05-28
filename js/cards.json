@@ -1,25 +1,25 @@
 {
     "cards" : [
         {
-            "img": "/images/card/1.webp"
+            "img": "/images/Card/1.webp"
         },
         {
-            "img": "/images/card/2.webp"
+            "img": "/images/Card/2.webp"
         },
         {
-            "img": "/images/card/3.webp"
+            "img": "/images/Card/3.webp"
         },
         {
-            "img": "/images/card/4.webp"
+            "img": "/images/Card/4.webp"
         },
         {
-            "img": "/images/card/5.webp"
+            "img": "/images/Card/5.webp"
         },
         {
-            "img": "/images/card/6.webp"
+            "img": "/images/Card/6.webp"
         },
         {
-            "img": "/images/card/7.webp"
+            "img": "/images/Card/7.webp"
         }
     ]
 }

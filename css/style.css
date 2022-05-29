@@ -76,6 +76,13 @@
     color: #ffc720 !important;
 }
 
+@media screen and (min-width: 772px) {
+    #logoImage
+    {
+        margin-right: 500px;
+    }
+}
+
 /*              Navbar                          */
 
 /*              Home                          */

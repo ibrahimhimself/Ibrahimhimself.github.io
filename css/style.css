@@ -177,6 +177,16 @@
     box-shadow: -150px -150px 0px -140px #ffc720;
     padding-top: 15px;
 }
+
+@media screen and (max-width: 715px) {
+    #Interest
+    {
+        display: flex;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+}
+
 /*              About me                          */
 /* Qualifications */
 

@@ -151,3 +151,44 @@ function displayCardsImages(){
         document.getElementById("mainDiv").innerHTML = str4;
     }
 }
+
+
+
+// ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
+
+
+let all = new XMLHttpRequest();
+
+all.open("GET","/js/All.json");
+
+all.send();
+
+all.addEventListener("readystatechange",function(){
+
+    if( all.readyState == 4 && all.status == 200 ){
+
+        allImagesArr = JSON.parse(all.response).all;
+
+        console.log(allImagesArr);
+
+        displayCardsImages();
+        
+    }
+});
+
+let str5 = "";
+
+function displayCardsImages(){
+
+    for(i = 0 ; i < allImagesArr.length ; i++){
+
+        str4+=
+        `
+    <div class="col-xl-4 col-12 mb-5 rounded-5">
+                <img src="${allImagesArr[i].img}" alt="" srcset="">
+            </div>
+        `
+
+        document.getElementById("mainDiv").innerHTML = str4;
+    }
+}

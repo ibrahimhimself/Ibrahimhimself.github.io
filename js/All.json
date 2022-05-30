@@ -1,0 +1,41 @@
+{
+    "all":
+    [
+        {
+            "img": "/images/card/1.webp"
+        },
+        {
+            "img": "/images/card/2.webp"
+        },
+        {
+            "img": "/images/card/3.webp"
+        },
+        {
+            "img": "/images/Logos/1.webp"
+        },
+        {
+            "img": "/images/Logos/2.webp"
+        },
+        {
+            "img": "/images/Logos/3.webp"
+        },
+        {
+            "img": "/images/Social Media/1.webp"
+        },
+        {
+            "img": "/images/Social Media/2.webp"
+        },
+        {
+            "img": "/images/Social Media/3.webp"
+        },
+        {
+            "img": "/images/Vector Art/1.webp"
+        },
+        {
+            "img": "/images/Vector Art/2.webp"
+        },
+        {
+            "img": "/images/Vector Art/3.webp"
+        }
+    ]
+}

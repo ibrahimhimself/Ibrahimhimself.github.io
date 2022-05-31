@@ -1,20 +1,9 @@
-// let loading = document.getElementById("loading");
-
-
-// let loadingPage=setTimeout(() => {
-    
-//     loading.style.display="none";
-    
-//  }, 5000);
-
 let allbtn = document.getElementById("allbtn");
 let logobtn = document.getElementById("logobtn");
 let socialMediabtn = document.getElementById("socialMediabtn");
 let vectorbtn = document.getElementById("vectorbtn");
 let webbtn = document.getElementById("webbtn");
-let bigImg = document.querySelectorAll(".smallImage");
-let bigImgArr = [...bigImg]
-console.log(bigImgArr);
+
 
 let logoImage = new XMLHttpRequest();
 
@@ -42,13 +31,14 @@ function displayLogoImages(){
 
         str+=
         `
-    <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${imageArr[i].img}" alt="" srcset="">
+    <div class="col-xl-2 col-12 mb-5 rounded-5">
+                <img src="${imageArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
         document.getElementById("mainDiv").innerHTML = str;
     }
+    bigDisplayall()
 }
 
 // ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -79,13 +69,14 @@ function displaySocialMediaImages(){
 
         str2+=
         `
-    <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${socialMediaImagesArr[i].img}" alt="" srcset="">
+    <div class="col-xl-2 col-12 mb-5 rounded-5">
+                <img src="${socialMediaImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
         document.getElementById("mainDiv").innerHTML = str2;
     }
+    bigDisplayall()
 }
 
 // ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -116,13 +107,14 @@ function displayVectorArtImages(){
 
         str3+=
         `
-    <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${vectorArtImagesArr[i].img}" alt="" srcset="">
+    <div class="col-xl-2 col-12 mb-5 rounded-5">
+                <img src="${vectorArtImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
         document.getElementById("mainDiv").innerHTML = str3;
     }
+    bigDisplayall()
 }  
 
 // ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -153,13 +145,15 @@ function displayCardsImages(){
 
         str4+=
         `
-    <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${cardsImagesArr[i].img}" alt="" srcset="">
+    <div class="col-xl-2 col-12 mb-5 rounded-5">
+                <img src="${cardsImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
         document.getElementById("mainDiv").innerHTML = str4;
     }
+
+    bigDisplayall();
 }
 
 
@@ -183,6 +177,7 @@ all.addEventListener("readystatechange",function(){
 
         displayallImages();
         
+        
     }
 });
 
@@ -194,30 +189,40 @@ function displayallImages(){
 
         str5+=
         `
-    <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${allImagesArr[i].img}" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <div class="col-xl-2 col-12 mb-5 rounded-5">
+                <img src="${allImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
         document.getElementById("mainDiv").innerHTML = str5;
     }
+    bigDisplayall()
+    
 }
 
-// function bigDisplayall(){
+function returnImages(){
 
-//     let strr5 = "";
-//     for(i = 0 ; i < allImagesArr.length ; i++){
+    var smallImges = document.querySelectorAll(".smallImage");
+    var smallImageArr = [...smallImges]
+    return smallImageArr;
+}
 
-//         bigImgArr[i].addEventListener("click",function(){
+function bigDisplayall(){
 
-//         strr5 =
-//             `
-//             <div class="modal-body" id="modalBody">
-//                         <img src="${allImagesArr[i].img}" class="w-100 lazyload" alt="" srcset="">
-//                     </div>
-//             `
-//         document.getElementById("modalBody").innerHTML = strr5;
+    let strr5 = "";
+    for(i = 0 ; i < returnImages().length ; i++){
 
-//         }) 
-//     }
-// }
+        let c = returnImages()[i].src;
+        returnImages()[i].addEventListener("click",function(){
+
+        strr5 =
+            `
+                <div class="modal-body" id="modalBody">
+                    <img src="${c}" class="w-100 lazyload">
+                </div>
+            `
+            
+        document.getElementById("modal-body").innerHTML = strr5;
+        }) 
+    }
+}

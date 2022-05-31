@@ -12,24 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
 </head>
 <body>
-    <!-- Loading -->
-    <!-- <div id="loading" class=" align-items-center justify-content-center">
-        <div class="sk-cube-grid ">
-          <div class="sk-cube sk-cube1"></div>
-          <div class="sk-cube sk-cube2"></div>
-          <div class="sk-cube sk-cube3"></div>
-          <div class="sk-cube sk-cube4"></div>
-          <div class="sk-cube sk-cube5"></div>
-          <div class="sk-cube sk-cube6"></div>
-          <div class="sk-cube sk-cube7"></div>
-          <div class="sk-cube sk-cube8"></div>
-          <div class="sk-cube sk-cube9"></div>
-        </div>
-      </div> -->
-        
-    <!-- Loading -->
     <!--   Navbar      -->
-        <nav class="navbar navbar-expand-lg nav-bg">
+        <nav class="navbar navbar-expand-lg nav-bg position-fixed w-100">
             <div class="container">
               <img class="navbar-brand lazyload" id="logoImage" width="75px" src="/images/Logo.webp">
               <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,27 +52,27 @@
                     <ul id="socialMedia"  class="d-md-block d-flex flex-row flex-nowrap justify-content-around">
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100007099896884" target="_blank">
-                                <img class="lazyload" src="/images/Facebook.webp" width="18" alt="" srcset="">
+                                <i class="fa-brands fs-5 text-light fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://twitter.com/IbrahimSaad2274?t=0F2_fn96d7xjSmapUM8vaw&s=08" target="_blank">
-                                <img class="lazyload" src="/images/Twitter.webp" width="18" alt="" srcset="">
+                                <i class="fa-brands fs-5 text-light fa-twitter"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://instagram.com/ibrahim_saad220?igshid=YmMyMTA2M2Y=" target="_blank">
-                                <img class="lazyload" src="/images/Instagram.webp" width="18" alt="" srcset="">
+                                <i class="fa-brands fs-5 text-light fa-instagram"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.linkedin.com/public-profile/settings" target="_blank">
-                                <img class="lazyload" src="/images/Linkedin.webp" width="18" alt="" srcset="">
+                                <i class="fa-brands fs-5 text-light fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.behance.net/ibrahimsaad13" target="_blank">
-                                <img class="lazyload" src="/images/Behance.webp" width="18" alt="" srcset="">
+                                <i class="fa-brands fs-5 text-light fa-behance"></i>
                             </a>
                         </li>
                     </ul>
@@ -97,10 +81,10 @@
                     <p class="text-light">
                         <span style="color: #ffc720;" class="fs-3"> Hi, I am </span><br>
                         <span class="name">Ibrahim Saad</span> <br>
-                        <span class="fw-bold fs-6" style="line-height: 2; width: 50px;">Graphic Designer & Fron-End Developer</span><br>
-                        I Design logos, social media designs, vector drawing,<br> banners, brochures, and web design.
+                        <span class="fw-bold fs-4" style="line-height: 2; width: 50px;">Graphic Designer & Front-End Developer</span><br><br><br>
+                        High level experience in Graphic Designer,<br>
+                        knowladge, web design and vector Art
                     </p>
-                    <br>
                     <a href="#" class="btn btn-warning mb-sm-2 mb-lg-0 rounded-5">Download CV</a>
                     <a href="#" class="btn btn-outline-warning rounded-5">Contact Me</a>
                 </div>
@@ -122,7 +106,10 @@
                 <div class="col-xl-4 col-md-5 col-12 mt-sm-5 text-light">
                     <article>
                         <h1 style="margin-top: 20px;">About Me</h1>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus odit tempora est quae dolore, nemo deleniti dolorum laudantium eveniet. Sint dignissimos perspiciatis magni omnis? Facilis voluptatem ratione minus sit cum.
+                        <p>I'm a Graphic Designer & Front-End Developer, I'm very passionate
+                            and dedicated to my work, I
+                            have acquired the skills and knowledge
+                            necessary to make your project a success.
                         </p>
                     </article>
                      <br>  
@@ -275,7 +262,7 @@
                     </ul>
                 </div>
             </div>
-            <div id="mainDiv" class="smallImage row p-5 d-flex flex-row flex-wrap justify-content-center align-items-center"></div>
+            <div id="mainDiv" class="row p-5 d-flex flex-row flex-wrap justify-content-center align-items-center"></div>
           </div>
     <!--   Portfolio   -->
 
@@ -283,13 +270,10 @@
 
 
 <!-- Modal -->
-
-
-          <!-- Button trigger modal -->
     
     <div class="modal fade" id="staticBackdrop"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
+            <div class="modal-content border-0" id="modal-body">
                 <!-- <div class="modal-body" id="modalBody">
                     <img src="/images/Card/1.webp" class="w-100 lazyload"  alt="" srcset="">
                 </div> -->

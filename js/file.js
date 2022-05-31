@@ -7,6 +7,15 @@
     
 //  }, 5000);
 
+let allbtn = document.getElementById("allbtn");
+let logobtn = document.getElementById("logobtn");
+let socialMediabtn = document.getElementById("socialMediabtn");
+let vectorbtn = document.getElementById("vectorbtn");
+let webbtn = document.getElementById("webbtn");
+let bigImg = document.querySelectorAll(".smallImage");
+let bigImgArr = [...bigImg]
+console.log(bigImgArr);
+
 let logoImage = new XMLHttpRequest();
 
 logoImage.open("GET","/js/logoImage.json");
@@ -20,6 +29,7 @@ logoImage.addEventListener("readystatechange",function(){
         imageArr = JSON.parse(logoImage.response).Logos;
 
         console.log(imageArr);
+        
         
     }
 });
@@ -171,24 +181,43 @@ all.addEventListener("readystatechange",function(){
 
         console.log(allImagesArr);
 
-        displayCardsImages();
+        displayallImages();
         
     }
 });
 
 let str5 = "";
 
-function displayCardsImages(){
+function displayallImages(){
 
     for(i = 0 ; i < allImagesArr.length ; i++){
 
-        str4+=
+        str5+=
         `
     <div class="col-xl-4 col-12 mb-5 rounded-5">
-                <img src="${allImagesArr[i].img}" alt="" srcset="">
+                <img src="${allImagesArr[i].img}" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
 
-        document.getElementById("mainDiv").innerHTML = str4;
+        document.getElementById("mainDiv").innerHTML = str5;
     }
 }
+
+// function bigDisplayall(){
+
+//     let strr5 = "";
+//     for(i = 0 ; i < allImagesArr.length ; i++){
+
+//         bigImgArr[i].addEventListener("click",function(){
+
+//         strr5 =
+//             `
+//             <div class="modal-body" id="modalBody">
+//                         <img src="${allImagesArr[i].img}" class="w-100 lazyload" alt="" srcset="">
+//                     </div>
+//             `
+//         document.getElementById("modalBody").innerHTML = strr5;
+
+//         }) 
+//     }
+// }

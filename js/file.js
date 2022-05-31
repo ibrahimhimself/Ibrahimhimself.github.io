@@ -31,7 +31,7 @@ function displayLogoImages(){
 
         str+=
         `
-    <div class="col-xl-2 col-12 mb-5 rounded-5">
+    <div class="col-xl-2 col-6 mb-5 rounded-5">
                 <img src="${imageArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
@@ -69,7 +69,7 @@ function displaySocialMediaImages(){
 
         str2+=
         `
-    <div class="col-xl-2 col-12 mb-5 rounded-5">
+    <div class="col-xl-2 col-6 mb-5 rounded-5">
                 <img src="${socialMediaImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
@@ -107,7 +107,7 @@ function displayVectorArtImages(){
 
         str3+=
         `
-    <div class="col-xl-2 col-12 mb-5 rounded-5">
+    <div class="col-xl-2 col-6 mb-5 rounded-5">
                 <img src="${vectorArtImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
@@ -145,7 +145,7 @@ function displayCardsImages(){
 
         str4+=
         `
-    <div class="col-xl-2 col-12 mb-5 rounded-5">
+    <div class="col-xl-2 col-6 mb-5 rounded-5">
                 <img src="${cardsImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
@@ -189,7 +189,7 @@ function displayallImages(){
 
         str5+=
         `
-    <div class="col-xl-2 col-12 mb-5 rounded-5">
+    <div class="col-xl-2 col-6 mb-5 rounded-5">
                 <img src="${allImagesArr[i].img}" class="smallImage" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             </div>
         `
@@ -217,7 +217,7 @@ function bigDisplayall(){
 
         strr5 =
             `
-                <div class="modal-body" id="modalBody">
+                <div class="modal-body p-0 m-0" id="modalBody">
                     <img src="${c}" class="w-100 lazyload">
                 </div>
             `

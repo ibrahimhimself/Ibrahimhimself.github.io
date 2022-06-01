@@ -92,9 +92,6 @@
     width: 100%;
     background-color: #100f2e;
     overflow: hidden;
-    background-image: url(/images/Circle.webp);
-    background-size:100%;
-    background-repeat: no-repeat;
 }
 
 .about-me .row
@@ -205,6 +202,7 @@
     transition: all .5s ease-in-out;
     cursor: pointer;
 }
+
 /* Qualifications */
 
 /* Portfolio */
@@ -214,9 +212,6 @@
     background-color: #100f2e;
     color: #fff;
     text-align: center;
-    background-image: url(/images/Pattern.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .Portfolio ul

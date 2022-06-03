@@ -179,29 +179,29 @@
     border-radius: 30px;
 }
 
-.what-offer .col-xl-4
+/* .what-offer .col-xl-4
 {
     border: 2px solid #ffc720;
     border-radius: 0 75px 0 0 ;
     padding: 25px;
     margin: 50px;
     width: 40vh;
-}
+} */
 
 
-.what-offer
+.my-skills
 {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.what-offer .col-xl-4:hover
+/* .what-offer .col-xl-4:hover
 {
     background-color: #ffc720;
     color: #fff;
     transition: all .5s ease-in-out;
     cursor: pointer;
-}
+} */
 
 /* Qualifications */
 

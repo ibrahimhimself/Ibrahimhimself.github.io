@@ -23,10 +23,10 @@ logoImage.addEventListener("readystatechange",function(){
     }
 });
 
-let str = "";
+
 
 function displayLogoImages(){
-
+    let str = "";
     for(i = 0 ; i < imageArr.length ; i++){
 
         str+=
@@ -61,10 +61,10 @@ socialMedia.addEventListener("readystatechange",function(){
     }
 });
 
-let str2 = "";
+
 
 function displaySocialMediaImages(){
-
+    let str2 = "";
     for(i = 0 ; i < socialMediaImagesArr.length ; i++){
 
         str2+=
@@ -99,10 +99,10 @@ vectorArt.addEventListener("readystatechange",function(){
     }
 });
 
-let str3 = "";
+
 
 function displayVectorArtImages(){
-
+    let str3 = "";
     for(i = 0 ; i < vectorArtImagesArr.length ; i++){
 
         str3+=
@@ -137,10 +137,10 @@ cards.addEventListener("readystatechange",function(){
     }
 });
 
-let str4 = "";
+
 
 function displayCardsImages(){
-
+    let str4 = "";
     for(i = 0 ; i < cardsImagesArr.length ; i++){
 
         str4+=
@@ -181,10 +181,10 @@ all.addEventListener("readystatechange",function(){
     }
 });
 
-let str5 = "";
+
 
 function displayallImages(){
-
+    let str5 = "";
     for(i = 0 ; i < allImagesArr.length ; i++){
 
         str5+=
